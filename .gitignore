@@ -1,7 +1,19 @@
-.env*
+# Ignore environment files
+/.env*
 
-# Logs
+# Ignore logs
 /log/*
 !/log/.keep
-# Ignore master key for decrypting credentials and more.
-/config/master.key
+
+# Ignore temporary/cache files
+/tmp/*
+!/tmp/.keep
+
+# Ignore bundler config
+/.bundle
+
+# Ignore node modules (if you add JS later)
+/node_modules
+
+# Ignore system files
+.DS_Storetouch log/.keep tmp/.keep
