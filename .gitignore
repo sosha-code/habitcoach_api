@@ -9,11 +9,6 @@
 /tmp/*
 !/tmp/.keep
 
-# Ignore bundler config
 /.bundle
 
-# Ignore node modules (if you add JS later)
-/node_modules
-
-# Ignore system files
-.DS_Storetouch log/.keep tmp/.keep
+.DS_Store
