@@ -5,7 +5,7 @@ Provides user authentication (JWT), habits management, daily check-ins, and prog
 
 ---
 
-## ✨ Features
+## Features
 
 - **Authentication (JWT)**
   - `POST /signup` — create account
@@ -23,7 +23,7 @@ Provides user authentication (JWT), habits management, daily check-ins, and prog
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Ruby on Rails 7 (API-only mode)  
 - PostgreSQL  
@@ -33,7 +33,7 @@ Provides user authentication (JWT), habits management, daily check-ins, and prog
 
 ---
 
-## 📦 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Docker Desktop installed  
@@ -52,7 +52,8 @@ docker compose up -d
 docker compose exec web bash -lc "bin/rails db:prepare"
 ```
 
---- Example API Usage
+--- 
+## Example API Usage
 ```bash
 # Signup
 curl -X POST http://localhost:3000/signup \
