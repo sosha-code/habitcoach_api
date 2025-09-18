@@ -50,3 +50,22 @@ docker compose up -d
 
 # setup DB
 docker compose exec web bash -lc "bin/rails db:prepare"
+```
+
+--- Example API Usage
+```bash
+# Signup
+curl -X POST http://localhost:3000/signup \
+  -H "Content-Type: application/json" \
+  -d '{"user":{"email":"demo@example.com","name":"Demo","password":"secret","password_confirmation":"secret"}}'
+
+# Login
+curl -X POST http://localhost:3000/login \
+  -H "Content-Type: application/json" \
+  -d '{"user":{"email":"demo@example.com","password":"secret"}}'
+
+# Me (replace TOKEN)
+curl http://localhost:3000/me \
+  -H "Authorization: Bearer TOKEN"
+  ```
+
